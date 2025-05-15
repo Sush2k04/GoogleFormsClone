@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 
-  <body>
-    <div class="first-block">
-    </div>
-    <div class="second">
-   
+<body>
+    <div class="outer">
+        <div class="block purple">
+            <h2>My Form-1</h1>
+                <p>Enter your details</p>
+                <hr>
+                <p style="color:red;margin-top:10px;">* Indicates required question </p>
+        </div>
+        <div class="block">
+            <form action="">
+                <label for="name">Enter your name </label>
+                <input id="name" name="name" type="text" placeholder="Full name" />
+        </div>
+        <div class="block">
+            <label for="father">Father's name: </label>
+            <input name="father" id="father" type="text" placeholder="Your answer">
+        </div>
+        <div class="block"> <label for="mother">Mother's name: </label>
+            <input name="mother" id="mother" type="text" placeholder="Your answer">
+        </div>
+        <div class="block">
+            <label for="dob">Date of birth: </label>
+            <input id="dob" name="dob" type="date" />
+        </div>
+        <div class="block">
+            <p>Choose language:</p>
+            <input id="hindi" name="language" type="radio" value="hindi" />
+            <label for="hindi">Hindi</label> 
 
-     
+            <input id="tamil" name="language" type="radio" value="tamil" />
+            <label for="tamil">Tamil</label>
+
+            <input id="english" type="radio" name="language" value="english" />
+            <label for="english">English</label> 
+
+            </form>
+        </div>
+        <div class="block remove">
+            <button type="submit" onclick="return validate()">Submit</Submit></button>
+        </form>
+            <p style="color: #7349BD;">Clear Form</p>
+        </div>
 
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
